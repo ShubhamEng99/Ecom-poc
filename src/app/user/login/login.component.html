@@ -1,0 +1,19 @@
+<div class="container shadow p-3 mb-5 bg-body rounded">
+    <img id="logo"src="https://image.flaticon.com/icons/png/512/825/825500.png"height="100px"width="100px">
+    <hr>
+    <h3>Log In</h3><button (click)="register()" class="btn btn-outline-secondary">sign up</button>
+    <form [formGroup]="login"(ngSubmit)="loggingin()">
+        <label for="Email">Email</label><br>
+        <input type="email"id="Email"formControlName="email"class="form-control">
+        <br>
+        <label for="Password">Password</label><br>
+        <input type="password"id="Password"formControlName="password"class="form-control">
+        <br>
+        <button type="submit" class="btn btn-dark"id="dark1">Login</button>
+        <br>
+        <br>
+        <span *ngIf="isvalid">please enter valid credentials</span>
+    </form>
+    <br>
+    <br>
+</div>

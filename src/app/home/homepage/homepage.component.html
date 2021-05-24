@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shop</a>
+      
+    <div class="cart">
+      <mat-icon *ngIf="number" matBadge="{{no}}" matBadgeColor="warn"></mat-icon><img (click)="gotocheckout()" src="https://image.flaticon.com/icons/png/128/726/726496.png"height="30px"width="30px">
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="sidepanel">
+    
+   <div class="sidenav">
+     <img src="https://image.flaticon.com/icons/png/512/825/825500.png"height="100px"width="100px">
+     <button (click)="home()" class="btn btn-outline-dark">Home <img src="https://image.flaticon.com/icons/png/128/553/553416.png"height="15px"width="20px"></button>
+     <button (click)="gotoproducts()" class="btn btn-outline-dark">Products <img src="https://image.flaticon.com/icons/png/512/3144/3144467.png"height="15px"width="20px"></button>
+     <button (click)="home()" class="btn btn-outline-dark">About <img src="https://image.flaticon.com/icons/png/128/681/681392.png"height="15px"width="20px"></button>
+     <button (click)="logout()" class="btn btn-outline-dark">Log Out <img src="https://image.flaticon.com/icons/png/512/1828/1828490.png"height="15px"width="20px"></button>
+   </div>
+    
+  </div>
+ <div class="main">
+  <mat-grid-list cols="1" rowHeight="7:1">
+    <mat-grid-tile class="tile"><img src="assets/background.png"></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile class="tile"><img src="assets/ti;e7.png"></mat-grid-tile>
+    <mat-grid-tile ><button (click)="gotoproducts()" class="btn btn-dark btn-lg">shop now</button></mat-grid-tile>
+    <mat-grid-tile class="tile"><img src="assets/tile3.png"></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="3:1">
+    <mat-grid-tile class="tile"><img src="assets/tile5.png"></mat-grid-tile>
+    <mat-grid-tile class="tile"><img src="assets/tile6.png"></mat-grid-tile>
+  </mat-grid-list>
+     </div>
+ 
+
+</div>
+
+</body>
+
+<footer>
+  <pre>
+    
+  Conditions of Use & Sale   Privacy Notice   Interest-Based Ads   © 1996-2021, Shop.com, Inc. or its affiliates</pre>
+   </footer>
+</html>
